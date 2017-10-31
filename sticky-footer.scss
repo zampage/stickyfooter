@@ -1,0 +1,10 @@
+@mixin cssGridStickyFooter($footerSelector: '&:nth-child(2)'){
+  min-height:100%;
+  display:grid;
+  grid-template-rows: 1fr auto;
+
+  #{$footerSelector}{
+    grid-row-start:2;
+    grid-row-end:3;
+  }
+}
