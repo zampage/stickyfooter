@@ -3,6 +3,8 @@ A modern easy to use sticky footer mixin with minimal HTML requirements.
 
 Example: [zampage.github.io/stickyfooter/](https://zampage.github.io/stickyfooter/)
 
+Install with Node: `npm install --save stickyfooter`
+
 ## Usage
 
 `stickyFooter([string:contentSelector, string:footerSelector])`
