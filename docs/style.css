@@ -14,17 +14,58 @@ html {
   height: 100%;
 }
 
-/* line 19, style.scss */
-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 19, style.scss */
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 9, ../sticky-footer.scss */
+  body *:nth-child(1) {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
 }
 
-/* line 6, ../sticky-footer.scss */
-body:nth-child(2) {
-  grid-row-start: 2;
-  grid-row-end: 3;
+@supports not (grid-template-areas: "support") {
+  /* line 19, style.scss */
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 20, ../sticky-footer.scss */
+  body *:nth-child(1) {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+@supports (grid-template-areas: "support") {
+  /* line 19, style.scss */
+  body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  /* line 31, ../sticky-footer.scss */
+  body *:nth-child(2) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 
 /* line 25, style.scss */
