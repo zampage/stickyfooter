@@ -26,11 +26,9 @@ parent{
 - you should use box-sizing: border-box; on all elements
 
 ## Browser Support
-- [X] Chrome >= 57
-- [X] Firefox >= 52
-- [X] MS Edge >= 16
+- [X] Chrome >= 21
+- [X] Firefox >= 28
+- [X] MS Edge - all versions
 - [ ] IE - not supported
-- [X] Safari >= 10.1
-- [X] Opera >= 44
-
-Notice: It is not recommended to use sticky footer on mobile.
+- [X] Safari >= 6.1
+- [X] Opera >= 12.1
