@@ -1,0 +1,11 @@
+{
+  "name": "stickyfooter",
+  "version": "1.0.0",
+  "description": "Sticky footer mixin for SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Markus Chiarot",
+  "license": "MIT"
+}
