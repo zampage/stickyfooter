@@ -5,11 +5,14 @@ Example: [zampage.github.io/stickyfooter/](https://zampage.github.io/stickyfoote
 
 ## Usage
 
+`stickyFooter([string:contentSelector, string:footerSelector])`
+
 ### SCSS
 ```scss
 parent{
-  @include stickyFooter(); //takes 2. child as footer
-  @include stickyFooter('content', 'footer'); //takes your selector as footer
+  @include stickyFooter(); //takes 1. child as content and 2. child as footer
+  @include stickyFooter('content'); //takes your selector as content and 2. child as footer
+  @include stickyFooter('content', 'footer'); //takes your selectors content and footer
 }
 ```
 
@@ -37,6 +40,7 @@ Sticky footer will automatically be ignored completely on IE. If you want to use
 
 ```scss
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  //some sort of fallback    
+  //some sort of fallback
+  //which is not executed in other browsers
 }
 ```
