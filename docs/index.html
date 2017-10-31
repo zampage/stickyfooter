@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sticky Footer</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <main>
+            <h1>Sticky Footer</h1>
+            <button onclick="addContent()">Add more Content!</button>
+            <p class="blueprint">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </main>
+        <footer>
+            <span>Footer</span>
+        </footer>
+        <script>
+            var main = document.querySelector('main');
+            var blueprint = document.querySelector('.blueprint');
+            var addContent = function(){
+                main.innerHTML += blueprint.outerHTML;
+            }
+        </script>
+    </body>
+</html>

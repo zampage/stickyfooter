@@ -1,0 +1,44 @@
+/* line 5, style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, style.scss */
+body {
+  margin: 0;
+}
+
+/* line 15, style.scss */
+html {
+  height: 100%;
+}
+
+/* line 19, style.scss */
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+/* line 6, ../sticky-footer.scss */
+body:nth-child(2) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/* line 25, style.scss */
+body {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+/* line 28, style.scss */
+body main {
+  padding: 20px;
+}
+
+/* line 32, style.scss */
+body footer {
+  padding: 20px;
+  background-color: lightblue;
+}
