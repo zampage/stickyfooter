@@ -3,7 +3,7 @@
   // load flex if browser is IE
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     display: flex;
-    min-height: 100vh;
+    min-height: 100%;
     flex-direction: column;
 
     #{$contentSelector} {
@@ -14,7 +14,7 @@
   // load flex if browser can't handle grid
   @supports not (grid-template-areas:"support"){
     display: flex;
-    min-height: 100vh;
+    min-height: 100%;
     flex-direction: column;
 
     #{$contentSelector} {
