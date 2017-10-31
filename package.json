@@ -1,6 +1,6 @@
 {
   "name": "stickyfooter",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Sticky footer mixin for SCSS",
   "main": "index.js",
   "scripts": {
