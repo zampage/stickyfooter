@@ -1,10 +1,37 @@
-@mixin cssGridStickyFooter($footerSelector: '&:nth-child(2)'){
-  min-height:100%;
-  display:grid;
-  grid-template-rows: 1fr auto;
+@mixin stickyFooter($contentSelector: '*:nth-child(1)', $footerSelector: '*:nth-child(2)'){
 
-  #{$footerSelector}{
-    grid-row-start:2;
-    grid-row-end:3;
+  // load flex if browser is IE
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    #{$contentSelector} {
+      flex: 1;
+    }
   }
+
+  // load flex if browser can't handle grid
+  @supports not (grid-template-areas:"support"){
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    #{$contentSelector} {
+      flex: 1;
+    }
+  }
+
+  // load grid if browser supports it
+  @supports (grid-template-areas:"support") {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    #{$footerSelector} {
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  }
+
 }

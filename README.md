@@ -8,8 +8,8 @@ Example: [zampage.github.io/stickyfooter/](https://zampage.github.io/stickyfoote
 ### SCSS
 ```scss
 parent{
-  @include cssGridStickyFooter(); //takes 2. child as footer
-  @include cssGridStickyFooter('footer'); //takes your selector as footer
+  @include stickyFooter(); //takes 2. child as footer
+  @include stickyFooter('content', 'footer'); //takes your selector as footer
 }
 ```
 
