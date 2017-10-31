@@ -29,10 +29,10 @@ parent{
 - you should use box-sizing: border-box; on all elements
 
 ## Browser Support
-- [X] Chrome >= 21
+- [X] Chrome >= 28
 - [X] Firefox >= 28
 - [X] MS Edge - all versions
-- [X] Safari >= 6.1
+- [X] Safari >= 9
 - [X] Opera >= 12.1
 - [ ] IE - not supported
 
