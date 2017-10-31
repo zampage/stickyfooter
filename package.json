@@ -1,6 +1,6 @@
 {
   "name": "stickyfooter",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A modern easy to use sticky footer mixin with minimal HTML requirements.",
   "main": "sticky-footer.scss",
   "scripts": {},
