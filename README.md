@@ -1,6 +1,8 @@
 # Sticky Footer
 A modern easy to use sticky footer mixin with minimal HTML requirements.
 
+Example: [zampage.github.io/stickyfooter/](https://zampage.github.io/stickyfooter/)
+
 ## Usage
 
 ### SCSS
