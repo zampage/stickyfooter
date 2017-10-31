@@ -2,11 +2,18 @@
 
   // load flex if browser can't handle grid
   @supports not (grid-template-areas:"support"){
-    display: flex;
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     #{$contentSelector} {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
       flex: 1;
     }
   }
