@@ -1,19 +1,5 @@
 @mixin stickyFooter($contentSelector: '*:nth-child(1)', $footerSelector: '*:nth-child(2)'){
 
-  // load flex if browser is IE
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    display: flex;
-    min-height: 100%;
-    flex-direction: column;
-
-    #{$contentSelector} {
-      //flex: 1 0 0;
-      -webkit-box-flex: 1;
-      -ms-flex: 1 0 0;
-      flex: 1 0 0;
-    }
-  }
-
   // load flex if browser can't handle grid
   @supports not (grid-template-areas:"support"){
     display: flex;

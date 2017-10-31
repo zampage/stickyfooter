@@ -29,6 +29,14 @@ parent{
 - [X] Chrome >= 21
 - [X] Firefox >= 28
 - [X] MS Edge - all versions
-- [ ] IE - not supported
 - [X] Safari >= 6.1
 - [X] Opera >= 12.1
+- [ ] IE - not supported
+
+Sticky footer will automatically be ignored completely on IE. If you want to use a fallback just for IE this is the way to go:
+
+```scss
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //some sort of fallback    
+}
+```

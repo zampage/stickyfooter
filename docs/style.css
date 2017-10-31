@@ -14,39 +14,19 @@ html {
   height: 100%;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* line 19, style.scss */
-  body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  /* line 9, ../sticky-footer.scss */
-  body *:nth-child(1) {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-  }
-}
-
 @supports not (grid-template-areas: "support") {
   /* line 19, style.scss */
   body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-height: 100vh;
+    min-height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  /* line 20, ../sticky-footer.scss */
+  /* line 9, ../sticky-footer.scss */
   body *:nth-child(1) {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -61,7 +41,7 @@ html {
     display: grid;
     grid-template-rows: 1fr auto;
   }
-  /* line 31, ../sticky-footer.scss */
+  /* line 20, ../sticky-footer.scss */
   body *:nth-child(2) {
     grid-row-start: 2;
     grid-row-end: 3;
@@ -74,12 +54,12 @@ body {
 }
 
 /* line 28, style.scss */
-body main {
+body .main {
   padding: 20px;
 }
 
 /* line 32, style.scss */
-body footer {
+body .footer {
   padding: 20px;
   background-color: lightblue;
 }
