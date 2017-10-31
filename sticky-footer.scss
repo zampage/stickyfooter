@@ -7,7 +7,10 @@
     flex-direction: column;
 
     #{$contentSelector} {
-      flex: 1;
+      //flex: 1 0 0;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 0;
+      flex: 1 0 0;
     }
   }
 
